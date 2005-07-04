@@ -33,11 +33,11 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_appdir}/{html,inc,templates},%{_sysconfdir}}
 cp -a php/html/* $RPM_BUILD_ROOT%{_appdir}/html
 cp -a php/inc/*  $RPM_BUILD_ROOT%{_appdir}/inc
-cp -a smarty/*tpl $RPM_BUILD_ROOT%{_appdir}/templates
+cp -a smarty/*.tpl $RPM_BUILD_ROOT%{_appdir}/templates
 
 sed -i -e '
 s;%%config_dir%%;%{_sysconfdir}/;g
-s;%php_dir%;%{_appdir}/;g
+s;%%php_dir%%;%{_appdir}/;g
 ' $RPM_BUILD_ROOT%{_appdir}/inc/{nagios,blacksmith}.inc.php
 
 %clean
