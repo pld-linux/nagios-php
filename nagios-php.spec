@@ -2,7 +2,7 @@ Summary:	Alternative Nagios Interface written in PHP
 Summary(pl):	Alternatywny interfejs Nagiosa napisany w PHP
 Name:		nagios-php
 Version:	0.5.1
-Release:	0.1
+Release:	0.2
 Epoch:		0
 License:	GPL
 Group:		Applications/WWW
@@ -10,11 +10,11 @@ Source0:	http://dl.sourceforge.net/nagios-php/%{name}-%{version}.tar.bz2
 # Source0-md5:	ad4c00b51d3fe2f66c964843769756a2
 URL:		http://nagios-php.sourceforge.net/
 Requires:	Smarty
-Requires:	nagios >= 1.0
 Requires:	nagios < 2.0
-Requires:	php
+Requires:	nagios >= 1.0
 Requires:	php-pear-Auth >= 1.2.3
 Requires:	php-pear-Files_Passwd >= 1.1.0
+Requires:	webserver(php)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
