@@ -1,5 +1,5 @@
 Summary:	Alternative Nagios Interface written in PHP
-Summary(pl.UTF-8):   Alternatywny interfejs Nagiosa napisany w PHP
+Summary(pl.UTF-8):	Alternatywny interfejs Nagiosa napisany w PHP
 Name:		nagios-php
 Version:	0.5.1
 Release:	0.2
